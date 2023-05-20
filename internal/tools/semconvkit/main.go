@@ -15,7 +15,7 @@
 // Package semconvkit is used to generate opentelemetry-go specific semantic
 // convention code. It is expected to be used in with the semconvgen utility
 // (go.opentelemetry.io/build-tools/semconvgen) to completely generate
-// versioned sub-packages of go.opentelemetry.io/otel/semconv.
+// versioned sub-packages of github.com/middleware-labs/otel/semconv.
 package main
 
 import (

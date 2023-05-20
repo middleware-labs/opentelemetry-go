@@ -48,7 +48,7 @@ CROSSLINK = $(TOOLS)/crosslink
 $(TOOLS)/crosslink: PACKAGE=go.opentelemetry.io/build-tools/crosslink
 
 SEMCONVKIT = $(TOOLS)/semconvkit
-$(TOOLS)/semconvkit: PACKAGE=go.opentelemetry.io/otel/$(TOOLS_MOD_DIR)/semconvkit
+$(TOOLS)/semconvkit: PACKAGE=github.com/middleware-labs/otel/$(TOOLS_MOD_DIR)/semconvkit
 
 DBOTCONF = $(TOOLS)/dbotconf
 $(TOOLS)/dbotconf: PACKAGE=go.opentelemetry.io/build-tools/dbotconf
@@ -125,7 +125,7 @@ test-coverage: | $(GOCOVMERGE)
 	@set -e; \
 	printf "" > coverage.txt; \
 	for dir in $(ALL_COVERAGE_MOD_DIRS); do \
-	  echo "$(GO) test -coverpkg=go.opentelemetry.io/otel/... -covermode=$(COVERAGE_MODE) -coverprofile="$(COVERAGE_PROFILE)" $${dir}/..."; \
+	  echo "$(GO) test -coverpkg=github.com/middleware-labs/otel/... -covermode=$(COVERAGE_MODE) -coverprofile="$(COVERAGE_PROFILE)" $${dir}/..."; \
 	  (cd "$${dir}" && \
 	    $(GO) list ./... \
 	    | grep -v third_party \

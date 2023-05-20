@@ -24,12 +24,12 @@ import (
 
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 
-	"go.opentelemetry.io/otel/attribute"
-	otelprom "go.opentelemetry.io/otel/exporters/prometheus"
-	"go.opentelemetry.io/otel/metric/instrument"
-	"go.opentelemetry.io/otel/sdk/instrumentation"
-	"go.opentelemetry.io/otel/sdk/metric"
-	"go.opentelemetry.io/otel/sdk/metric/aggregation"
+	"github.com/middleware-labs/otel/attribute"
+	otelprom "github.com/middleware-labs/otel/exporters/prometheus"
+	"github.com/middleware-labs/otel/metric/instrument"
+	"github.com/middleware-labs/otel/sdk/instrumentation"
+	"github.com/middleware-labs/otel/sdk/metric"
+	"github.com/middleware-labs/otel/sdk/metric/aggregation"
 )
 
 const meterName = "github.com/open-telemetry/opentelemetry-go/example/view"

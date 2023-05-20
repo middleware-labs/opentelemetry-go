@@ -14,9 +14,9 @@
 
 // Code generated from semantic convention specification. DO NOT EDIT.
 
-package semconv // import "go.opentelemetry.io/otel/semconv/v1.16.0"
+package semconv // import "github.com/middleware-labs/otel/semconv/v1.16.0"
 
-import "go.opentelemetry.io/otel/attribute"
+import "github.com/middleware-labs/otel/attribute"
 
 // This document defines the shared attributes used to report a single exception associated with a span or log.
 const (

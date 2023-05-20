@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package internal // import "go.opentelemetry.io/otel/bridge/opencensus/opencensusmetric/internal"
+package internal // import "github.com/middleware-labs/otel/bridge/opencensus/opencensusmetric/internal"
 
 import (
 	"errors"
@@ -21,9 +21,9 @@ import (
 
 	ocmetricdata "go.opencensus.io/metric/metricdata"
 
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/sdk/metric/metricdata"
-	"go.opentelemetry.io/otel/sdk/metric/metricdata/metricdatatest"
+	"github.com/middleware-labs/otel/attribute"
+	"github.com/middleware-labs/otel/sdk/metric/metricdata"
+	"github.com/middleware-labs/otel/sdk/metric/metricdata/metricdatatest"
 )
 
 func TestConvertMetrics(t *testing.T) {

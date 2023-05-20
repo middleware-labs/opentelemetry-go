@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package otest // import "go.opentelemetry.io/otel/exporters/otlp/otlpmetric/internal/otest"
+package otest // import "github.com/middleware-labs/otel/exporters/otlp/otlpmetric/internal/otest"
 
 import (
 	"context"
@@ -25,9 +25,9 @@ import (
 	"github.com/stretchr/testify/require"
 	"google.golang.org/protobuf/proto"
 
-	"go.opentelemetry.io/otel"
-	"go.opentelemetry.io/otel/exporters/otlp/otlpmetric/internal"
-	semconv "go.opentelemetry.io/otel/semconv/v1.17.0"
+	"github.com/middleware-labs/otel"
+	"github.com/middleware-labs/otel/exporters/otlp/otlpmetric/internal"
+	semconv "github.com/middleware-labs/otel/semconv/v1.17.0"
 	collpb "go.opentelemetry.io/proto/otlp/collector/metrics/v1"
 	cpb "go.opentelemetry.io/proto/otlp/common/v1"
 	mpb "go.opentelemetry.io/proto/otlp/metrics/v1"

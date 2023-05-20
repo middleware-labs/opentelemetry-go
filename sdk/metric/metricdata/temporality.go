@@ -14,7 +14,7 @@
 
 //go:generate stringer -type=Temporality
 
-package metricdata // import "go.opentelemetry.io/otel/sdk/metric/metricdata"
+package metricdata // import "github.com/middleware-labs/otel/sdk/metric/metricdata"
 
 // Temporality defines the window that an aggregation was calculated over.
 type Temporality uint8

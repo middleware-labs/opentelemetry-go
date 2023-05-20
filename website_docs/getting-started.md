@@ -158,14 +158,14 @@ OpenTelemetry is split into two parts: an API to instrument code with, and SDKs
 that implement the API. To start integrating OpenTelemetry into any project, the
 API is used to define how telemetry is generated. To generate tracing telemetry
 in your application you will use the OpenTelemetry Trace API from the
-[`go.opentelemetry.io/otel/trace`] package.
+[`github.com/middleware-labs/otel/trace`] package.
 
 First, you need to install the necessary packages for the Trace API. Run the
 following command in your working directory.
 
 ```sh
-go get go.opentelemetry.io/otel \
-       go.opentelemetry.io/otel/trace
+go get github.com/middleware-labs/otel \
+       github.com/middleware-labs/otel/trace
 ```
 
 Now that the packages installed you can start updating your application with
@@ -179,9 +179,9 @@ import (
 	"log"
 	"strconv"
 
-	"go.opentelemetry.io/otel"
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/trace"
+	"github.com/middleware-labs/otel"
+	"github.com/middleware-labs/otel/attribute"
+	"github.com/middleware-labs/otel/trace"
 )
 ```
 
@@ -246,7 +246,7 @@ func (a *App) Run(ctx context.Context) error {
 
 The above code creates a span for every iteration of the for loop. The span is
 created using a [`Tracer`] from the
-[global `TracerProvider`](https://pkg.go.dev/go.opentelemetry.io/otel#GetTracerProvider).
+[global `TracerProvider`](https://pkg.go.dev/github.com/middleware-labs/otel#GetTracerProvider).
 You will learn more about [`TracerProvider`]s and handle the other side of
 setting up a global [`TracerProvider`] when you install an SDK in a later
 section. For now, as an instrumentation author, all you need to worry about is
@@ -334,15 +334,15 @@ configure and install an SDK.
 
 OpenTelemetry is designed to be modular in its implementation of the
 OpenTelemetry API. The OpenTelemetry Go project offers an SDK package,
-[`go.opentelemetry.io/otel/sdk`], that implements this API and adheres to the
+[`github.com/middleware-labs/otel/sdk`], that implements this API and adheres to the
 OpenTelemetry specification. To start using this SDK you will first need to
 create an exporter, but before anything can happen we need to install some
 packages. Run the following in the `fib` directory to install the trace STDOUT
 exporter and the SDK.
 
 ```sh
-go get go.opentelemetry.io/otel/sdk \
-       go.opentelemetry.io/otel/exporters/stdout/stdouttrace
+go get github.com/middleware-labs/otel/sdk \
+       github.com/middleware-labs/otel/exporters/stdout/stdouttrace
 ```
 
 Now add the needed imports to `main.go`.
@@ -355,12 +355,12 @@ import (
 	"os"
 	"os/signal"
 
-	"go.opentelemetry.io/otel"
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/exporters/stdout/stdouttrace"
-	"go.opentelemetry.io/otel/sdk/resource"
-	"go.opentelemetry.io/otel/sdk/trace"
-	semconv "go.opentelemetry.io/otel/semconv/v1.17.0"
+	"github.com/middleware-labs/otel"
+	"github.com/middleware-labs/otel/attribute"
+	"github.com/middleware-labs/otel/exporters/stdout/stdouttrace"
+	"github.com/middleware-labs/otel/sdk/resource"
+	"github.com/middleware-labs/otel/sdk/trace"
+	semconv "github.com/middleware-labs/otel/semconv/v1.17.0"
 )
 ```
 
@@ -371,9 +371,9 @@ are packages that allow telemetry data to be emitted somewhere - either to the
 console (which is what we're doing here), or to a remote system or collector for
 further analysis and/or enrichment. OpenTelemetry supports a variety of
 exporters through its ecosystem including popular open source tools like
-[Jaeger](https://pkg.go.dev/go.opentelemetry.io/otel/exporters/jaeger),
-[Zipkin](https://pkg.go.dev/go.opentelemetry.io/otel/exporters/zipkin), and
-[Prometheus](https://pkg.go.dev/go.opentelemetry.io/otel/exporters/prometheus).
+[Jaeger](https://pkg.go.dev/github.com/middleware-labs/otel/exporters/jaeger),
+[Zipkin](https://pkg.go.dev/github.com/middleware-labs/otel/exporters/zipkin), and
+[Prometheus](https://pkg.go.dev/github.com/middleware-labs/otel/exporters/prometheus).
 
 To initialize the console exporter, add the following function to the `main.go`
 file:
@@ -601,7 +601,7 @@ func (a *App) Poll(ctx context.Context) (uint, error) {
 ```
 
 All that is left is updating imports for the `app.go` file to include the
-[`go.opentelemetry.io/otel/codes`] package.
+[`github.com/middleware-labs/otel/codes`] package.
 
 ```go
 import (
@@ -611,10 +611,10 @@ import (
 	"log"
 	"strconv"
 
-	"go.opentelemetry.io/otel"
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/codes"
-	"go.opentelemetry.io/otel/trace"
+	"github.com/middleware-labs/otel"
+	"github.com/middleware-labs/otel/attribute"
+	"github.com/middleware-labs/otel/codes"
+	"github.com/middleware-labs/otel/trace"
 )
 ```
 
@@ -675,19 +675,19 @@ You'll also want to configure an appropriate exporter to
 [export your telemetry data](/docs/instrumentation/go/exporters/) to one or more
 telemetry backends.
 
-[`go.opentelemetry.io/otel/trace`]:
-  https://pkg.go.dev/go.opentelemetry.io/otel/trace
-[`go.opentelemetry.io/otel/sdk`]:
-  https://pkg.go.dev/go.opentelemetry.io/otel/sdk
-[`go.opentelemetry.io/otel/codes`]:
-  https://pkg.go.dev/go.opentelemetry.io/otel/codes
-[`tracer`]: https://pkg.go.dev/go.opentelemetry.io/otel/trace#Tracer
+[`github.com/middleware-labs/otel/trace`]:
+  https://pkg.go.dev/github.com/middleware-labs/otel/trace
+[`github.com/middleware-labs/otel/sdk`]:
+  https://pkg.go.dev/github.com/middleware-labs/otel/sdk
+[`github.com/middleware-labs/otel/codes`]:
+  https://pkg.go.dev/github.com/middleware-labs/otel/codes
+[`tracer`]: https://pkg.go.dev/github.com/middleware-labs/otel/trace#Tracer
 [`tracerprovider`]:
-  https://pkg.go.dev/go.opentelemetry.io/otel/trace#TracerProvider
-[`resource`]: https://pkg.go.dev/go.opentelemetry.io/otel/sdk/resource#Resource
+  https://pkg.go.dev/github.com/middleware-labs/otel/trace#TracerProvider
+[`resource`]: https://pkg.go.dev/github.com/middleware-labs/otel/sdk/resource#Resource
 [`spanprocessor`]:
-  https://pkg.go.dev/go.opentelemetry.io/otel/sdk/trace#SpanProcessor
+  https://pkg.go.dev/github.com/middleware-labs/otel/sdk/trace#SpanProcessor
 [`batchspanprocessor`]:
-  https://pkg.go.dev/go.opentelemetry.io/otel/sdk/trace#NewBatchSpanProcessor
+  https://pkg.go.dev/github.com/middleware-labs/otel/sdk/trace#NewBatchSpanProcessor
 [`trace.withbatcher`]:
-  https://pkg.go.dev/go.opentelemetry.io/otel/sdk/trace#WithBatcher
+  https://pkg.go.dev/github.com/middleware-labs/otel/sdk/trace#WithBatcher

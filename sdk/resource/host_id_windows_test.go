@@ -15,7 +15,7 @@
 //go:build windows
 // +build windows
 
-package resource // import "go.opentelemetry.io/otel/sdk/resource"
+package resource // import "github.com/middleware-labs/otel/sdk/resource"
 
 import (
 	"testing"

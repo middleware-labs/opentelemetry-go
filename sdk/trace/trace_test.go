@@ -30,14 +30,14 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"go.opentelemetry.io/otel"
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/codes"
-	ottest "go.opentelemetry.io/otel/internal/internaltest"
-	"go.opentelemetry.io/otel/sdk/instrumentation"
-	"go.opentelemetry.io/otel/sdk/resource"
-	semconv "go.opentelemetry.io/otel/semconv/v1.17.0"
-	"go.opentelemetry.io/otel/trace"
+	"github.com/middleware-labs/otel"
+	"github.com/middleware-labs/otel/attribute"
+	"github.com/middleware-labs/otel/codes"
+	ottest "github.com/middleware-labs/otel/internal/internaltest"
+	"github.com/middleware-labs/otel/sdk/instrumentation"
+	"github.com/middleware-labs/otel/sdk/resource"
+	semconv "github.com/middleware-labs/otel/semconv/v1.17.0"
+	"github.com/middleware-labs/otel/trace"
 )
 
 const envVar = "OTEL_RESOURCE_ATTRIBUTES"
@@ -1198,7 +1198,7 @@ func TestRecordError(t *testing.T) {
 	}{
 		{
 			err: ottest.NewTestError("test error"),
-			typ: "go.opentelemetry.io/otel/internal/internaltest.TestError",
+			typ: "github.com/middleware-labs/otel/internal/internaltest.TestError",
 			msg: "test error",
 		},
 		{
@@ -1250,7 +1250,7 @@ func TestRecordError(t *testing.T) {
 
 func TestRecordErrorWithStackTrace(t *testing.T) {
 	err := ottest.NewTestError("test error")
-	typ := "go.opentelemetry.io/otel/internal/internaltest.TestError"
+	typ := "github.com/middleware-labs/otel/internal/internaltest.TestError"
 	msg := "test error"
 
 	te := NewTestExporter()
@@ -1296,8 +1296,8 @@ func TestRecordErrorWithStackTrace(t *testing.T) {
 	assert.Equal(t, got.events[0].Attributes[1].Value.AsString(), want.events[0].Attributes[1].Value.AsString())
 	gotStackTraceFunctionName := strings.Split(got.events[0].Attributes[2].Value.AsString(), "\n")
 
-	assert.Truef(t, strings.HasPrefix(gotStackTraceFunctionName[1], "go.opentelemetry.io/otel/sdk/trace.recordStackTrace"), "%q not prefixed with go.opentelemetry.io/otel/sdk/trace.recordStackTrace", gotStackTraceFunctionName[1])
-	assert.Truef(t, strings.HasPrefix(gotStackTraceFunctionName[3], "go.opentelemetry.io/otel/sdk/trace.(*recordingSpan).RecordError"), "%q not prefixed with go.opentelemetry.io/otel/sdk/trace.(*recordingSpan).RecordError", gotStackTraceFunctionName[3])
+	assert.Truef(t, strings.HasPrefix(gotStackTraceFunctionName[1], "github.com/middleware-labs/otel/sdk/trace.recordStackTrace"), "%q not prefixed with github.com/middleware-labs/otel/sdk/trace.recordStackTrace", gotStackTraceFunctionName[1])
+	assert.Truef(t, strings.HasPrefix(gotStackTraceFunctionName[3], "github.com/middleware-labs/otel/sdk/trace.(*recordingSpan).RecordError"), "%q not prefixed with github.com/middleware-labs/otel/sdk/trace.(*recordingSpan).RecordError", gotStackTraceFunctionName[3])
 }
 
 func TestRecordErrorNil(t *testing.T) {
@@ -1528,8 +1528,8 @@ func TestSpanCapturesPanicWithStackTrace(t *testing.T) {
 	assert.Equal(t, spans[0].Events()[0].Attributes[1].Value.AsString(), "error message")
 
 	gotStackTraceFunctionName := strings.Split(spans[0].Events()[0].Attributes[2].Value.AsString(), "\n")
-	assert.Truef(t, strings.HasPrefix(gotStackTraceFunctionName[1], "go.opentelemetry.io/otel/sdk/trace.recordStackTrace"), "%q not prefixed with go.opentelemetry.io/otel/sdk/trace.recordStackTrace", gotStackTraceFunctionName[1])
-	assert.Truef(t, strings.HasPrefix(gotStackTraceFunctionName[3], "go.opentelemetry.io/otel/sdk/trace.(*recordingSpan).End"), "%q not prefixed with go.opentelemetry.io/otel/sdk/trace.(*recordingSpan).End", gotStackTraceFunctionName[3])
+	assert.Truef(t, strings.HasPrefix(gotStackTraceFunctionName[1], "github.com/middleware-labs/otel/sdk/trace.recordStackTrace"), "%q not prefixed with github.com/middleware-labs/otel/sdk/trace.recordStackTrace", gotStackTraceFunctionName[1])
+	assert.Truef(t, strings.HasPrefix(gotStackTraceFunctionName[3], "github.com/middleware-labs/otel/sdk/trace.(*recordingSpan).End"), "%q not prefixed with github.com/middleware-labs/otel/sdk/trace.(*recordingSpan).End", gotStackTraceFunctionName[3])
 }
 
 func TestReadOnlySpan(t *testing.T) {

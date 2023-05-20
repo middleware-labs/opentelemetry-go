@@ -28,7 +28,7 @@
 // done by configuring it with a Reader implementation (using the WithReader
 // MeterProviderOption). Readers take two forms: ones that push to an endpoint
 // (NewPeriodicReader), and ones that an endpoint pulls from. See the
-// go.opentelemetry.io/otel/exporters package for exporters that can be used as
+// github.com/middleware-labs/otel/exporters package for exporters that can be used as
 // or with these Readers.
 //
 // Each Reader, when registered with the MeterProvider, can be augmented with a
@@ -41,4 +41,4 @@
 // should be used to describe the unique runtime environment instrumented code
 // is being run on. That way when multiple instances of the code are collected
 // at a single endpoint their origin is decipherable.
-package metric // import "go.opentelemetry.io/otel/sdk/metric"
+package metric // import "github.com/middleware-labs/otel/sdk/metric"

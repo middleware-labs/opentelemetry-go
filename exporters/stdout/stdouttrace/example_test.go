@@ -19,12 +19,12 @@ import (
 	"fmt"
 	"log"
 
-	"go.opentelemetry.io/otel"
-	"go.opentelemetry.io/otel/exporters/stdout/stdouttrace"
-	"go.opentelemetry.io/otel/sdk/resource"
-	sdktrace "go.opentelemetry.io/otel/sdk/trace"
-	semconv "go.opentelemetry.io/otel/semconv/v1.17.0"
-	"go.opentelemetry.io/otel/trace"
+	"github.com/middleware-labs/otel"
+	"github.com/middleware-labs/otel/exporters/stdout/stdouttrace"
+	"github.com/middleware-labs/otel/sdk/resource"
+	sdktrace "github.com/middleware-labs/otel/sdk/trace"
+	semconv "github.com/middleware-labs/otel/semconv/v1.17.0"
+	"github.com/middleware-labs/otel/trace"
 )
 
 const (

@@ -12,13 +12,13 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package env // import "go.opentelemetry.io/otel/sdk/internal/env"
+package env // import "github.com/middleware-labs/otel/sdk/internal/env"
 
 import (
 	"os"
 	"strconv"
 
-	"go.opentelemetry.io/otel/internal/global"
+	"github.com/middleware-labs/otel/internal/global"
 )
 
 // Environment variable names.

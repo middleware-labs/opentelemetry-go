@@ -20,13 +20,13 @@ import (
 	"strings"
 	"testing"
 
-	"go.opentelemetry.io/otel/trace"
+	"github.com/middleware-labs/otel/trace"
 
 	"github.com/google/go-cmp/cmp"
 	"github.com/stretchr/testify/assert"
 
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/codes"
+	"github.com/middleware-labs/otel/attribute"
+	"github.com/middleware-labs/otel/codes"
 )
 
 type tlsOption int

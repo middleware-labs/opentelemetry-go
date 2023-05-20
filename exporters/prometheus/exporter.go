@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package prometheus // import "go.opentelemetry.io/otel/exporters/prometheus"
+package prometheus // import "github.com/middleware-labs/otel/exporters/prometheus"
 
 import (
 	"context"
@@ -28,13 +28,13 @@ import (
 	dto "github.com/prometheus/client_model/go"
 	"google.golang.org/protobuf/proto"
 
-	"go.opentelemetry.io/otel"
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/internal/global"
-	"go.opentelemetry.io/otel/sdk/instrumentation"
-	"go.opentelemetry.io/otel/sdk/metric"
-	"go.opentelemetry.io/otel/sdk/metric/metricdata"
-	"go.opentelemetry.io/otel/sdk/resource"
+	"github.com/middleware-labs/otel"
+	"github.com/middleware-labs/otel/attribute"
+	"github.com/middleware-labs/otel/internal/global"
+	"github.com/middleware-labs/otel/sdk/instrumentation"
+	"github.com/middleware-labs/otel/sdk/metric"
+	"github.com/middleware-labs/otel/sdk/metric/metricdata"
+	"github.com/middleware-labs/otel/sdk/resource"
 )
 
 const (

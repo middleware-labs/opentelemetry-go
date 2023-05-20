@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package internal // import "go.opentelemetry.io/otel/schema/internal"
+package internal // import "github.com/middleware-labs/otel/schema/internal"
 
 import (
 	"testing"

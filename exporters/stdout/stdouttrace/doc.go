@@ -14,4 +14,4 @@
 
 // Package stdouttrace contains an OpenTelemetry exporter for tracing
 // telemetry to be written to an output destination as JSON.
-package stdouttrace // import "go.opentelemetry.io/otel/exporters/stdout/stdouttrace"
+package stdouttrace // import "github.com/middleware-labs/otel/exporters/stdout/stdouttrace"

@@ -15,4 +15,4 @@
 // Package otlpmetrichttp provides an otlpmetric.Exporter that communicates
 // with an OTLP receiving endpoint using protobuf encoded metric data over
 // HTTP.
-package otlpmetrichttp // import "go.opentelemetry.io/otel/exporters/otlp/otlpmetric/otlpmetrichttp"
+package otlpmetrichttp // import "github.com/middleware-labs/otel/exporters/otlp/otlpmetric/otlpmetrichttp"

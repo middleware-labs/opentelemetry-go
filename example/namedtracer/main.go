@@ -21,13 +21,13 @@ import (
 
 	"github.com/go-logr/stdr"
 
-	"go.opentelemetry.io/otel"
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/baggage"
-	"go.opentelemetry.io/otel/example/namedtracer/foo"
-	"go.opentelemetry.io/otel/exporters/stdout/stdouttrace"
-	sdktrace "go.opentelemetry.io/otel/sdk/trace"
-	"go.opentelemetry.io/otel/trace"
+	"github.com/middleware-labs/otel"
+	"github.com/middleware-labs/otel/attribute"
+	"github.com/middleware-labs/otel/baggage"
+	"github.com/middleware-labs/otel/example/namedtracer/foo"
+	"github.com/middleware-labs/otel/exporters/stdout/stdouttrace"
+	sdktrace "github.com/middleware-labs/otel/sdk/trace"
+	"github.com/middleware-labs/otel/trace"
 )
 
 var (

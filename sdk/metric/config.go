@@ -12,14 +12,14 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package metric // import "go.opentelemetry.io/otel/sdk/metric"
+package metric // import "github.com/middleware-labs/otel/sdk/metric"
 
 import (
 	"context"
 	"fmt"
 	"sync"
 
-	"go.opentelemetry.io/otel/sdk/resource"
+	"github.com/middleware-labs/otel/sdk/resource"
 )
 
 // config contains configuration options for a MeterProvider.
@@ -109,7 +109,7 @@ func (o optionFunc) apply(conf config) config {
 // the MeterProvider will create.
 //
 // By default, if this Option is not used, the default Resource from the
-// go.opentelemetry.io/otel/sdk/resource package will be used.
+// github.com/middleware-labs/otel/sdk/resource package will be used.
 func WithResource(res *resource.Resource) Option {
 	return optionFunc(func(conf config) config {
 		conf.res = res

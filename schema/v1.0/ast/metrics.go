@@ -12,9 +12,9 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package ast // import "go.opentelemetry.io/otel/schema/v1.0/ast"
+package ast // import "github.com/middleware-labs/otel/schema/v1.0/ast"
 
-import "go.opentelemetry.io/otel/schema/v1.0/types"
+import "github.com/middleware-labs/otel/schema/v1.0/types"
 
 // Metrics corresponds to a section representing a list of changes that happened
 // to metrics schema in a particular version.

@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package internal // import "go.opentelemetry.io/otel/bridge/opentracing/internal"
+package internal // import "github.com/middleware-labs/otel/bridge/opentracing/internal"
 
 import (
 	"context"
@@ -21,11 +21,11 @@ import (
 	"sync"
 	"time"
 
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/bridge/opentracing/migration"
-	"go.opentelemetry.io/otel/codes"
-	semconv "go.opentelemetry.io/otel/semconv/v1.17.0"
-	"go.opentelemetry.io/otel/trace"
+	"github.com/middleware-labs/otel/attribute"
+	"github.com/middleware-labs/otel/bridge/opentracing/migration"
+	"github.com/middleware-labs/otel/codes"
+	semconv "github.com/middleware-labs/otel/semconv/v1.17.0"
+	"github.com/middleware-labs/otel/trace"
 )
 
 //nolint:revive // ignoring missing comments for unexported global variables in an internal package.

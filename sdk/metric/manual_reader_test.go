@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package metric // import "go.opentelemetry.io/otel/sdk/metric/reader"
+package metric // import "github.com/middleware-labs/otel/sdk/metric/reader"
 
 import (
 	"testing"
@@ -20,7 +20,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/suite"
 
-	"go.opentelemetry.io/otel/sdk/metric/metricdata"
+	"github.com/middleware-labs/otel/sdk/metric/metricdata"
 )
 
 func TestManualReader(t *testing.T) {

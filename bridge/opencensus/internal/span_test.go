@@ -19,12 +19,12 @@ import (
 
 	octrace "go.opencensus.io/trace"
 
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/bridge/opencensus/internal"
-	"go.opentelemetry.io/otel/bridge/opencensus/internal/oc2otel"
-	"go.opentelemetry.io/otel/bridge/opencensus/internal/otel2oc"
-	"go.opentelemetry.io/otel/codes"
-	"go.opentelemetry.io/otel/trace"
+	"github.com/middleware-labs/otel/attribute"
+	"github.com/middleware-labs/otel/bridge/opencensus/internal"
+	"github.com/middleware-labs/otel/bridge/opencensus/internal/oc2otel"
+	"github.com/middleware-labs/otel/bridge/opencensus/internal/otel2oc"
+	"github.com/middleware-labs/otel/codes"
+	"github.com/middleware-labs/otel/trace"
 )
 
 type span struct {

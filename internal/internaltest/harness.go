@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package internaltest // import "go.opentelemetry.io/otel/internal/internaltest"
+package internaltest // import "github.com/middleware-labs/otel/internal/internaltest"
 
 import (
 	"context"
@@ -21,10 +21,10 @@ import (
 	"testing"
 	"time"
 
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/codes"
-	"go.opentelemetry.io/otel/internal/matchers"
-	"go.opentelemetry.io/otel/trace"
+	"github.com/middleware-labs/otel/attribute"
+	"github.com/middleware-labs/otel/codes"
+	"github.com/middleware-labs/otel/internal/matchers"
+	"github.com/middleware-labs/otel/trace"
 )
 
 // Harness is a testing harness used to test implementations of the

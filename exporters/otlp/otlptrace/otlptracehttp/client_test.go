@@ -27,10 +27,10 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"go.opentelemetry.io/otel"
-	"go.opentelemetry.io/otel/exporters/otlp/otlptrace"
-	"go.opentelemetry.io/otel/exporters/otlp/otlptrace/internal/otlptracetest"
-	"go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracehttp"
+	"github.com/middleware-labs/otel"
+	"github.com/middleware-labs/otel/exporters/otlp/otlptrace"
+	"github.com/middleware-labs/otel/exporters/otlp/otlptrace/internal/otlptracetest"
+	"github.com/middleware-labs/otel/exporters/otlp/otlptrace/otlptracehttp"
 	coltracepb "go.opentelemetry.io/proto/otlp/collector/trace/v1"
 )
 

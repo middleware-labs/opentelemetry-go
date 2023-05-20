@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package otlpconfig // import "go.opentelemetry.io/otel/exporters/otlp/otlptrace/internal/otlpconfig"
+package otlpconfig // import "github.com/middleware-labs/otel/exporters/otlp/otlptrace/internal/otlpconfig"
 
 import (
 	"crypto/tls"
@@ -25,8 +25,8 @@ import (
 	"google.golang.org/grpc/credentials/insecure"
 	"google.golang.org/grpc/encoding/gzip"
 
-	"go.opentelemetry.io/otel/exporters/otlp/internal"
-	"go.opentelemetry.io/otel/exporters/otlp/internal/retry"
+	"github.com/middleware-labs/otel/exporters/otlp/internal"
+	"github.com/middleware-labs/otel/exporters/otlp/internal/retry"
 )
 
 const (

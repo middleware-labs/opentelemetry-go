@@ -9,13 +9,13 @@ The following exporter packages are provided with the following OpenTelemetry si
 
 | Exporter Package                                                                | Metrics | Traces |
 | :-----------------------------------------------------------------------------: | :-----: | :----: |
-| [go.opentelemetry.io/otel/exporters/jaeger](./jaeger)                           |         | ✓      |
-| [go.opentelemetry.io/otel/exporters/otlp/otlpmetric](./otlp/otlpmetric)         | ✓       |        |
-| [go.opentelemetry.io/otel/exporters/otlp/otlptrace](./otlp/otlptrace)           |         | ✓      |
-| [go.opentelemetry.io/otel/exporters/prometheus](./prometheus)                   | ✓       |        |
-| [go.opentelemetry.io/otel/exporters/stdout/stdoutmetric](./stdout/stdoutmetric) | ✓       |        |
-| [go.opentelemetry.io/otel/exporters/stdout/stdouttrace](./stdout/stdouttrace)   |         | ✓      |
-| [go.opentelemetry.io/otel/exporters/zipkin](./zipkin)                           |         | ✓      |
+| [github.com/middleware-labs/otel/exporters/jaeger](./jaeger)                           |         | ✓      |
+| [github.com/middleware-labs/otel/exporters/otlp/otlpmetric](./otlp/otlpmetric)         | ✓       |        |
+| [github.com/middleware-labs/otel/exporters/otlp/otlptrace](./otlp/otlptrace)           |         | ✓      |
+| [github.com/middleware-labs/otel/exporters/prometheus](./prometheus)                   | ✓       |        |
+| [github.com/middleware-labs/otel/exporters/stdout/stdoutmetric](./stdout/stdoutmetric) | ✓       |        |
+| [github.com/middleware-labs/otel/exporters/stdout/stdouttrace](./stdout/stdouttrace)   |         | ✓      |
+| [github.com/middleware-labs/otel/exporters/zipkin](./zipkin)                           |         | ✓      |
 
 See the [OpenTelemetry registry] for 3rd-part exporters compatible with this project.
 

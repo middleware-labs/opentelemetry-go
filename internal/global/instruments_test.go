@@ -18,11 +18,11 @@ import (
 	"context"
 	"testing"
 
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/metric"
-	"go.opentelemetry.io/otel/metric/embedded"
-	"go.opentelemetry.io/otel/metric/instrument"
-	"go.opentelemetry.io/otel/metric/noop"
+	"github.com/middleware-labs/otel/attribute"
+	"github.com/middleware-labs/otel/metric"
+	"github.com/middleware-labs/otel/metric/embedded"
+	"github.com/middleware-labs/otel/metric/instrument"
+	"github.com/middleware-labs/otel/metric/noop"
 )
 
 func testFloat64Race(interact func(context.Context, float64, ...attribute.KeyValue), setDelegate func(metric.Meter)) {

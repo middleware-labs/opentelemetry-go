@@ -12,14 +12,14 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package metric // import "go.opentelemetry.io/otel/sdk/metric"
+package metric // import "github.com/middleware-labs/otel/sdk/metric"
 
 import (
 	"os"
 	"strconv"
 	"time"
 
-	"go.opentelemetry.io/otel/internal/global"
+	"github.com/middleware-labs/otel/internal/global"
 )
 
 // Environment variable names.

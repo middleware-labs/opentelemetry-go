@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package opencensus // import "go.opentelemetry.io/otel/bridge/opencensus"
+package opencensus // import "github.com/middleware-labs/otel/bridge/opencensus"
 
 import (
 	"context"
@@ -25,12 +25,12 @@ import (
 	"go.opencensus.io/metric/metricproducer"
 	ocresource "go.opencensus.io/resource"
 
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/sdk/instrumentation"
-	"go.opentelemetry.io/otel/sdk/metric"
-	"go.opentelemetry.io/otel/sdk/metric/metricdata"
-	"go.opentelemetry.io/otel/sdk/metric/metricdata/metricdatatest"
-	"go.opentelemetry.io/otel/sdk/resource"
+	"github.com/middleware-labs/otel/attribute"
+	"github.com/middleware-labs/otel/sdk/instrumentation"
+	"github.com/middleware-labs/otel/sdk/metric"
+	"github.com/middleware-labs/otel/sdk/metric/metricdata"
+	"github.com/middleware-labs/otel/sdk/metric/metricdata/metricdatatest"
+	"github.com/middleware-labs/otel/sdk/resource"
 )
 
 func TestMetricProducer(t *testing.T) {

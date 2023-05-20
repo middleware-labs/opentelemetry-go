@@ -18,11 +18,11 @@ import (
 	"context"
 	"fmt"
 
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/metric/embedded"
-	"go.opentelemetry.io/otel/metric/instrument"
-	"go.opentelemetry.io/otel/sdk/metric/aggregation"
-	"go.opentelemetry.io/otel/sdk/metric/metricdata"
+	"github.com/middleware-labs/otel/attribute"
+	"github.com/middleware-labs/otel/metric/embedded"
+	"github.com/middleware-labs/otel/metric/instrument"
+	"github.com/middleware-labs/otel/sdk/metric/aggregation"
+	"github.com/middleware-labs/otel/sdk/metric/metricdata"
 )
 
 type meter struct {

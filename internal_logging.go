@@ -12,12 +12,12 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package otel // import "go.opentelemetry.io/otel"
+package otel // import "github.com/middleware-labs/otel"
 
 import (
 	"github.com/go-logr/logr"
 
-	"go.opentelemetry.io/otel/internal/global"
+	"github.com/middleware-labs/otel/internal/global"
 )
 
 // SetLogger configures the logger used internally to opentelemetry.

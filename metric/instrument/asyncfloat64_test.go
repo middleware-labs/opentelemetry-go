@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package instrument // import "go.opentelemetry.io/otel/metric/instrument"
+package instrument // import "github.com/middleware-labs/otel/metric/instrument"
 
 import (
 	"context"
@@ -21,8 +21,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/metric/embedded"
+	"github.com/middleware-labs/otel/attribute"
+	"github.com/middleware-labs/otel/metric/embedded"
 )
 
 func TestFloat64ObservableConfiguration(t *testing.T) {

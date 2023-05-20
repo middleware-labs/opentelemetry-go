@@ -13,9 +13,9 @@
 // limitations under the License.
 
 // Package internal contains common functionality for all OTLP exporters.
-package internal // import "go.opentelemetry.io/otel/exporters/otlp/internal"
+package internal // import "github.com/middleware-labs/otel/exporters/otlp/internal"
 
-import "go.opentelemetry.io/otel"
+import "github.com/middleware-labs/otel"
 
 // GetUserAgentHeader return an OTLP header value form "OTel OTLP Exporter Go/{{ .Version }}"
 // https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/protocol/exporter.md#user-agent

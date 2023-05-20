@@ -12,15 +12,15 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package metricdatatest // import "go.opentelemetry.io/otel/sdk/metric/metricdata/metricdatatest"
+package metricdatatest // import "github.com/middleware-labs/otel/sdk/metric/metricdata/metricdatatest"
 
 import (
 	"bytes"
 	"fmt"
 	"reflect"
 
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/sdk/metric/metricdata"
+	"github.com/middleware-labs/otel/attribute"
+	"github.com/middleware-labs/otel/sdk/metric/metricdata"
 )
 
 // equalResourceMetrics returns reasons ResourceMetrics are not equal. If they

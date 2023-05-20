@@ -12,15 +12,15 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package internal // import "go.opentelemetry.io/otel/sdk/metric/internal"
+package internal // import "github.com/middleware-labs/otel/sdk/metric/internal"
 
 import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
 
-	"go.opentelemetry.io/otel/sdk/metric/metricdata"
-	"go.opentelemetry.io/otel/sdk/metric/metricdata/metricdatatest"
+	"github.com/middleware-labs/otel/sdk/metric/metricdata"
+	"github.com/middleware-labs/otel/sdk/metric/metricdata/metricdatatest"
 )
 
 func TestLastValue(t *testing.T) {

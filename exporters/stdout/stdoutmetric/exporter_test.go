@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package stdoutmetric_test // import "go.opentelemetry.io/otel/exporters/stdout/stdoutmetric"
+package stdoutmetric_test // import "github.com/middleware-labs/otel/exporters/stdout/stdoutmetric"
 
 import (
 	"context"
@@ -24,10 +24,10 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"go.opentelemetry.io/otel/exporters/stdout/stdoutmetric"
-	"go.opentelemetry.io/otel/sdk/metric"
-	"go.opentelemetry.io/otel/sdk/metric/aggregation"
-	"go.opentelemetry.io/otel/sdk/metric/metricdata"
+	"github.com/middleware-labs/otel/exporters/stdout/stdoutmetric"
+	"github.com/middleware-labs/otel/sdk/metric"
+	"github.com/middleware-labs/otel/sdk/metric/aggregation"
+	"github.com/middleware-labs/otel/sdk/metric/metricdata"
 )
 
 func testEncoderOption() stdoutmetric.Option {

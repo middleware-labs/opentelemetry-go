@@ -1,4 +1,4 @@
-module go.opentelemetry.io/otel/schema
+module github.com/middleware-labs/otel/schema
 
 go 1.19
 

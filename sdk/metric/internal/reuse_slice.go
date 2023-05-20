@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package internal // import "go.opentelemetry.io/otel/sdk/metric/internal"
+package internal // import "github.com/middleware-labs/otel/sdk/metric/internal"
 
 // ReuseSlice returns a zeroed view of slice if its capacity is greater than or
 // equal to n. Otherwise, it returns a new []T with capacity equal to n.

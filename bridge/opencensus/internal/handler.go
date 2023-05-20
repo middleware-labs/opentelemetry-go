@@ -12,9 +12,9 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package internal // import "go.opentelemetry.io/otel/bridge/opencensus/internal"
+package internal // import "github.com/middleware-labs/otel/bridge/opencensus/internal"
 
-import "go.opentelemetry.io/otel"
+import "github.com/middleware-labs/otel"
 
 // Handle is the package level function to handle errors. It can be
 // overwritten for testing.

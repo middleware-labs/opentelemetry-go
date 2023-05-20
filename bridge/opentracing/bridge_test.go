@@ -28,11 +28,11 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"go.opentelemetry.io/otel"
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/bridge/opentracing/internal"
-	"go.opentelemetry.io/otel/propagation"
-	"go.opentelemetry.io/otel/trace"
+	"github.com/middleware-labs/otel"
+	"github.com/middleware-labs/otel/attribute"
+	"github.com/middleware-labs/otel/bridge/opentracing/internal"
+	"github.com/middleware-labs/otel/propagation"
+	"github.com/middleware-labs/otel/trace"
 )
 
 type testOnlyTextMapReader struct {
@@ -417,7 +417,7 @@ func TestBridgeTracer_StartSpan(t *testing.T) {
 				bridge.SetOpenTelemetryTracer(wTracer)
 			},
 			expectWarnings: []string{
-				"SDK should have deferred the context setup, see the documentation of go.opentelemetry.io/otel/bridge/opentracing/migration\n",
+				"SDK should have deferred the context setup, see the documentation of github.com/middleware-labs/otel/bridge/opentracing/migration\n",
 			},
 		},
 	}

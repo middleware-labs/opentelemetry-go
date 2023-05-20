@@ -12,14 +12,14 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package internal // import "go.opentelemetry.io/otel/exporters/otlp/otlpmetric/internal"
+package internal // import "github.com/middleware-labs/otel/exporters/otlp/otlpmetric/internal"
 
 import (
 	"context"
 
-	"go.opentelemetry.io/otel/sdk/metric"
-	"go.opentelemetry.io/otel/sdk/metric/aggregation"
-	"go.opentelemetry.io/otel/sdk/metric/metricdata"
+	"github.com/middleware-labs/otel/sdk/metric"
+	"github.com/middleware-labs/otel/sdk/metric/aggregation"
+	"github.com/middleware-labs/otel/sdk/metric/metricdata"
 	mpb "go.opentelemetry.io/proto/otlp/metrics/v1"
 )
 

@@ -34,7 +34,7 @@ for line in $requests; do
     fi
 
     module=$(echo $line | cut -f 2 -d " ")
-    if [[ $module == go.opentelemetry.io/otel* ]]; then
+    if [[ $module == github.com/middleware-labs/otel* ]]; then
         continue
     fi
     version=$(echo $line | cut -f 6 -d " ")

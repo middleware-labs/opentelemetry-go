@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package trace // import "go.opentelemetry.io/otel/trace"
+package trace // import "github.com/middleware-labs/otel/trace"
 
 import (
 	"bytes"
@@ -20,8 +20,8 @@ import (
 	"encoding/hex"
 	"encoding/json"
 
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/codes"
+	"github.com/middleware-labs/otel/attribute"
+	"github.com/middleware-labs/otel/codes"
 )
 
 const (
@@ -516,7 +516,7 @@ type Tracer interface {
 //
 // Commonly, instrumentation code will accept a TracerProvider implementation
 // at runtime from its users or it can simply use the globally registered one
-// (see https://pkg.go.dev/go.opentelemetry.io/otel#GetTracerProvider).
+// (see https://pkg.go.dev/github.com/middleware-labs/otel#GetTracerProvider).
 //
 // Warning: methods may be added to this interface in minor releases.
 type TracerProvider interface {

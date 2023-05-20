@@ -20,9 +20,9 @@ To create spans, you'll need to acquire or initialize a tracer first.
 Ensure you have the right packages installed:
 
 ```sh
-go get go.opentelemetry.io/otel \
-  go.opentelemetry.io/otel/trace \
-  go.opentelemetry.io/otel/sdk \
+go get github.com/middleware-labs/otel \
+  github.com/middleware-labs/otel/trace \
+  github.com/middleware-labs/otel/sdk \
 ```
 
 Then initialize an exporter, resources, tracer provider, and finally a tracer.
@@ -35,12 +35,12 @@ import (
 	"fmt"
 	"log"
 
-	"go.opentelemetry.io/otel"
-	"go.opentelemetry.io/otel/exporters/otlp/otlptrace"
-	"go.opentelemetry.io/otel/sdk/resource"
-	sdktrace "go.opentelemetry.io/otel/sdk/trace"
-	semconv "go.opentelemetry.io/otel/semconv/v1.17.0"
-	"go.opentelemetry.io/otel/trace"
+	"github.com/middleware-labs/otel"
+	"github.com/middleware-labs/otel/exporters/otlp/otlptrace"
+	"github.com/middleware-labs/otel/sdk/resource"
+	sdktrace "github.com/middleware-labs/otel/sdk/trace"
+	semconv "github.com/middleware-labs/otel/semconv/v1.17.0"
+	"github.com/middleware-labs/otel/trace"
 )
 
 var tracer trace.Tracer
@@ -188,7 +188,7 @@ Semantic Attributes are attributes that are defined by the [OpenTelemetry
 Specification][] in order to provide a shared set of attribute keys across
 multiple languages, frameworks, and runtimes for common concepts like HTTP
 methods, status codes, user agents, and more. These attributes are available in
-the `go.opentelemetry.io/otel/semconv/v1.12.0` package.
+the `github.com/middleware-labs/otel/semconv/v1.12.0` package.
 
 For details, see [Trace semantic conventions][].
 
@@ -227,7 +227,7 @@ in the operation a span is tracking - .`Error`.
 ```go
 import (
 	// ...
-	"go.opentelemetry.io/otel/codes"
+	"github.com/middleware-labs/otel/codes"
 	// ...
 )
 
@@ -250,7 +250,7 @@ produced, you can record that error.
 ```go
 import (
 	// ...
-	"go.opentelemetry.io/otel/codes"
+	"github.com/middleware-labs/otel/codes"
 	// ...
 )
 
@@ -282,8 +282,8 @@ registered with the OpenTelemetry API.
 
 ```go
 import (
-  "go.opentelemetry.io/otel"
-  "go.opentelemetry.io/otel/propagation"
+  "github.com/middleware-labs/otel"
+  "github.com/middleware-labs/otel/propagation"
 )
 ...
 otel.SetTextMapPropagator(propagation.TraceContext{})

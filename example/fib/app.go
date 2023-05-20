@@ -21,10 +21,10 @@ import (
 	"log"
 	"strconv"
 
-	"go.opentelemetry.io/otel"
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/codes"
-	"go.opentelemetry.io/otel/trace"
+	"github.com/middleware-labs/otel"
+	"github.com/middleware-labs/otel/attribute"
+	"github.com/middleware-labs/otel/codes"
+	"github.com/middleware-labs/otel/trace"
 )
 
 // name is the Tracer name used to identify this instrumentation library.

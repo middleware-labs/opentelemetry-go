@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package metricdatatest // import "go.opentelemetry.io/otel/sdk/metric/metricdata/metricdatatest"
+package metricdatatest // import "github.com/middleware-labs/otel/sdk/metric/metricdata/metricdatatest"
 
 import (
 	"testing"
@@ -20,10 +20,10 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/sdk/instrumentation"
-	"go.opentelemetry.io/otel/sdk/metric/metricdata"
-	"go.opentelemetry.io/otel/sdk/resource"
+	"github.com/middleware-labs/otel/attribute"
+	"github.com/middleware-labs/otel/sdk/instrumentation"
+	"github.com/middleware-labs/otel/sdk/metric/metricdata"
+	"github.com/middleware-labs/otel/sdk/resource"
 )
 
 var (

@@ -16,4 +16,4 @@
 Package otlptracehttp a client that sends traces to the collector using HTTP
 with binary protobuf payloads.
 */
-package otlptracehttp // import "go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracehttp"
+package otlptracehttp // import "github.com/middleware-labs/otel/exporters/otlp/otlptrace/otlptracehttp"

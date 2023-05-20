@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package internaltest // import "go.opentelemetry.io/otel/internal/internaltest"
+package internaltest // import "github.com/middleware-labs/otel/internal/internaltest"
 
 /*
 This file contains common utilities and objects to validate memory alignment

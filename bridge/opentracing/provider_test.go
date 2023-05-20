@@ -17,8 +17,8 @@ package opentracing
 import (
 	"testing"
 
-	"go.opentelemetry.io/otel/bridge/opentracing/internal"
-	"go.opentelemetry.io/otel/trace"
+	"github.com/middleware-labs/otel/bridge/opentracing/internal"
+	"github.com/middleware-labs/otel/trace"
 )
 
 type namedMockTracer struct {

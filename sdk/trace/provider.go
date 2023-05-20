@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package trace // import "go.opentelemetry.io/otel/sdk/trace"
+package trace // import "github.com/middleware-labs/otel/sdk/trace"
 
 import (
 	"context"
@@ -20,15 +20,15 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"go.opentelemetry.io/otel"
-	"go.opentelemetry.io/otel/internal/global"
-	"go.opentelemetry.io/otel/sdk/instrumentation"
-	"go.opentelemetry.io/otel/sdk/resource"
-	"go.opentelemetry.io/otel/trace"
+	"github.com/middleware-labs/otel"
+	"github.com/middleware-labs/otel/internal/global"
+	"github.com/middleware-labs/otel/sdk/instrumentation"
+	"github.com/middleware-labs/otel/sdk/resource"
+	"github.com/middleware-labs/otel/trace"
 )
 
 const (
-	defaultTracerName = "go.opentelemetry.io/otel/sdk/tracer"
+	defaultTracerName = "github.com/middleware-labs/otel/sdk/tracer"
 )
 
 // tracerProviderConfig.

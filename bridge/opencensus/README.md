@@ -62,8 +62,8 @@ To override OpenCensus' DefaultTracer with the bridge:
 ```go
 import (
 	octrace "go.opencensus.io/trace"
-	"go.opentelemetry.io/otel/bridge/opencensus"
-	"go.opentelemetry.io/otel"
+	"github.com/middleware-labs/otel/bridge/opencensus"
+	"github.com/middleware-labs/otel"
 )
 
 tracer := otel.GetTracerProvider().Tracer("bridge")

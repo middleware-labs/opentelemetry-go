@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package propagation // import "go.opentelemetry.io/otel/propagation"
+package propagation // import "github.com/middleware-labs/otel/propagation"
 
 import (
 	"context"

@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package internal // import "go.opentelemetry.io/otel/bridge/opencensus/internal"
+package internal // import "github.com/middleware-labs/otel/bridge/opencensus/internal"
 
 import (
 	"context"
@@ -20,8 +20,8 @@ import (
 
 	octrace "go.opencensus.io/trace"
 
-	"go.opentelemetry.io/otel/bridge/opencensus/internal/oc2otel"
-	"go.opentelemetry.io/otel/trace"
+	"github.com/middleware-labs/otel/bridge/opencensus/internal/oc2otel"
+	"github.com/middleware-labs/otel/trace"
 )
 
 // Tracer is an OpenCensus Tracer that wraps an OpenTelemetry Tracer.

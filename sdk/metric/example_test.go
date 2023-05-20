@@ -18,19 +18,19 @@ import (
 	"context"
 	"log"
 
-	"go.opentelemetry.io/otel"
-	"go.opentelemetry.io/otel/sdk/metric"
-	"go.opentelemetry.io/otel/sdk/resource"
-	semconv "go.opentelemetry.io/otel/semconv/v1.17.0"
+	"github.com/middleware-labs/otel"
+	"github.com/middleware-labs/otel/sdk/metric"
+	"github.com/middleware-labs/otel/sdk/resource"
+	semconv "github.com/middleware-labs/otel/semconv/v1.17.0"
 )
 
 func Example() {
 	// This reader is used as a stand-in for a reader that will actually export
-	// data. See exporters in the go.opentelemetry.io/otel/exporters package
+	// data. See exporters in the github.com/middleware-labs/otel/exporters package
 	// for more information.
 	reader := metric.NewManualReader()
 
-	// See the go.opentelemetry.io/otel/sdk/resource package for more
+	// See the github.com/middleware-labs/otel/sdk/resource package for more
 	// information about how to create and use Resources.
 	res := resource.NewWithAttributes(
 		semconv.SchemaURL,
@@ -55,6 +55,6 @@ func Example() {
 	// you can pass this instance directly to your instrumented code if it
 	// accepts a MeterProvider instance.
 	//
-	// See the go.opentelemetry.io/otel/metric package for more information
+	// See the github.com/middleware-labs/otel/metric package for more information
 	// about the metric API.
 }

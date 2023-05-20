@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package semconv // import "go.opentelemetry.io/otel/semconv/v1.6.1"
+package semconv // import "github.com/middleware-labs/otel/semconv/v1.6.1"
 
 // SchemaURL is the schema URL that matches the version of the semantic conventions
 // that this package defines. Semconv packages starting from v1.4.0 must declare

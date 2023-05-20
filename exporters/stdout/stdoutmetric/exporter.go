@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package stdoutmetric // import "go.opentelemetry.io/otel/exporters/stdout/stdoutmetric"
+package stdoutmetric // import "github.com/middleware-labs/otel/exporters/stdout/stdoutmetric"
 
 import (
 	"context"
@@ -21,10 +21,10 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"go.opentelemetry.io/otel/internal/global"
-	"go.opentelemetry.io/otel/sdk/metric"
-	"go.opentelemetry.io/otel/sdk/metric/aggregation"
-	"go.opentelemetry.io/otel/sdk/metric/metricdata"
+	"github.com/middleware-labs/otel/internal/global"
+	"github.com/middleware-labs/otel/sdk/metric"
+	"github.com/middleware-labs/otel/sdk/metric/aggregation"
+	"github.com/middleware-labs/otel/sdk/metric/metricdata"
 )
 
 // exporter is an OpenTelemetry metric exporter.

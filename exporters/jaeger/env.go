@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package jaeger // import "go.opentelemetry.io/otel/exporters/jaeger"
+package jaeger // import "github.com/middleware-labs/otel/exporters/jaeger"
 
 import (
 	"os"

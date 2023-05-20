@@ -2,14 +2,14 @@
 
 ## Getting started
 
-`go get go.opentelemetry.io/otel/bridge/opentracing`
+`go get github.com/middleware-labs/otel/bridge/opentracing`
 
 Assuming you have configured an OpenTelemetry `TracerProvider`, these will be the steps to follow to wire up the bridge:
 
 ```go
 import (
-	"go.opentelemetry.io/otel"
-	otelBridge "go.opentelemetry.io/otel/bridge/opentracing"
+	"github.com/middleware-labs/otel"
+	otelBridge "github.com/middleware-labs/otel/bridge/opentracing"
 )
 
 func main() {
@@ -45,7 +45,7 @@ The bridge functionality can be extended beyond the OpenTracing API.
 
 ### `SpanContext.IsSampled`
 
-Return the underlying OpenTelemetry [`Span.IsSampled`](https://pkg.go.dev/go.opentelemetry.io/otel/trace#SpanContext.IsSampled) value by converting a `bridgeSpanContext`.
+Return the underlying OpenTelemetry [`Span.IsSampled`](https://pkg.go.dev/github.com/middleware-labs/otel/trace#SpanContext.IsSampled) value by converting a `bridgeSpanContext`.
 
 ```go
 type samplable interface {

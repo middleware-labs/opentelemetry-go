@@ -12,10 +12,10 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package transform // import "go.opentelemetry.io/otel/exporters/otlp/otlpmetric/internal/transform"
+package transform // import "github.com/middleware-labs/otel/exporters/otlp/otlpmetric/internal/transform"
 
 import (
-	"go.opentelemetry.io/otel/attribute"
+	"github.com/middleware-labs/otel/attribute"
 	cpb "go.opentelemetry.io/proto/otlp/common/v1"
 )
 

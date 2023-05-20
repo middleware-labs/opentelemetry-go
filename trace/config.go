@@ -12,12 +12,12 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package trace // import "go.opentelemetry.io/otel/trace"
+package trace // import "github.com/middleware-labs/otel/trace"
 
 import (
 	"time"
 
-	"go.opentelemetry.io/otel/attribute"
+	"github.com/middleware-labs/otel/attribute"
 )
 
 // TracerConfig is a group of options for a Tracer.

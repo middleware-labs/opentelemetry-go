@@ -23,14 +23,14 @@ import (
 	"github.com/stretchr/testify/require"
 	"google.golang.org/protobuf/proto"
 
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/codes"
-	"go.opentelemetry.io/otel/sdk/instrumentation"
-	"go.opentelemetry.io/otel/sdk/resource"
-	tracesdk "go.opentelemetry.io/otel/sdk/trace"
-	"go.opentelemetry.io/otel/sdk/trace/tracetest"
-	semconv "go.opentelemetry.io/otel/semconv/v1.17.0"
-	"go.opentelemetry.io/otel/trace"
+	"github.com/middleware-labs/otel/attribute"
+	"github.com/middleware-labs/otel/codes"
+	"github.com/middleware-labs/otel/sdk/instrumentation"
+	"github.com/middleware-labs/otel/sdk/resource"
+	tracesdk "github.com/middleware-labs/otel/sdk/trace"
+	"github.com/middleware-labs/otel/sdk/trace/tracetest"
+	semconv "github.com/middleware-labs/otel/semconv/v1.17.0"
+	"github.com/middleware-labs/otel/trace"
 	tracepb "go.opentelemetry.io/proto/otlp/trace/v1"
 )
 

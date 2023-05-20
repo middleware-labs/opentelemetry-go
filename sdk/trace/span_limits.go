@@ -12,9 +12,9 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package trace // import "go.opentelemetry.io/otel/sdk/trace"
+package trace // import "github.com/middleware-labs/otel/sdk/trace"
 
-import "go.opentelemetry.io/otel/sdk/internal/env"
+import "github.com/middleware-labs/otel/sdk/internal/env"
 
 const (
 	// DefaultAttributeValueLengthLimit is the default maximum allowed

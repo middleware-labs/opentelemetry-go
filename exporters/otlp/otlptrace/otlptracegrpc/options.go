@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package otlptracegrpc // import "go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracegrpc"
+package otlptracegrpc // import "github.com/middleware-labs/otel/exporters/otlp/otlptrace/otlptracegrpc"
 
 import (
 	"fmt"
@@ -21,9 +21,9 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials"
 
-	"go.opentelemetry.io/otel"
-	"go.opentelemetry.io/otel/exporters/otlp/internal/retry"
-	"go.opentelemetry.io/otel/exporters/otlp/otlptrace/internal/otlpconfig"
+	"github.com/middleware-labs/otel"
+	"github.com/middleware-labs/otel/exporters/otlp/internal/retry"
+	"github.com/middleware-labs/otel/exporters/otlp/otlptrace/internal/otlpconfig"
 )
 
 // Option applies an option to the gRPC driver.

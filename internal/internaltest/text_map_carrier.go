@@ -12,13 +12,13 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package internaltest // import "go.opentelemetry.io/otel/internal/internaltest"
+package internaltest // import "github.com/middleware-labs/otel/internal/internaltest"
 
 import (
 	"sync"
 	"testing"
 
-	"go.opentelemetry.io/otel/propagation"
+	"github.com/middleware-labs/otel/propagation"
 )
 
 // TextMapCarrier is a storage medium for a TextMapPropagator used in testing.

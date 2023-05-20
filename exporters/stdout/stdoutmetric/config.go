@@ -11,15 +11,15 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package stdoutmetric // import "go.opentelemetry.io/otel/exporters/stdout/stdoutmetric"
+package stdoutmetric // import "github.com/middleware-labs/otel/exporters/stdout/stdoutmetric"
 
 import (
 	"encoding/json"
 	"os"
 
-	"go.opentelemetry.io/otel/internal/global"
-	"go.opentelemetry.io/otel/sdk/metric"
-	"go.opentelemetry.io/otel/sdk/metric/aggregation"
+	"github.com/middleware-labs/otel/internal/global"
+	"github.com/middleware-labs/otel/sdk/metric"
+	"github.com/middleware-labs/otel/sdk/metric/aggregation"
 )
 
 // config contains options for the exporter.
@@ -79,7 +79,7 @@ func WithEncoder(encoder Encoder) Option {
 // WithTemporalitySelector sets the TemporalitySelector the exporter will use
 // to determine the Temporality of an instrument based on its kind. If this
 // option is not used, the exporter will use the DefaultTemporalitySelector
-// from the go.opentelemetry.io/otel/sdk/metric package.
+// from the github.com/middleware-labs/otel/sdk/metric package.
 func WithTemporalitySelector(selector metric.TemporalitySelector) Option {
 	return temporalitySelectorOption{selector: selector}
 }
@@ -96,7 +96,7 @@ func (t temporalitySelectorOption) apply(c config) config {
 // WithAggregationSelector sets the AggregationSelector the exporter will use
 // to determine the aggregation to use for an instrument based on its kind. If
 // this option is not used, the exporter will use the
-// DefaultAggregationSelector from the go.opentelemetry.io/otel/sdk/metric
+// DefaultAggregationSelector from the github.com/middleware-labs/otel/sdk/metric
 // package or the aggregation explicitly passed for a view matching an
 // instrument.
 func WithAggregationSelector(selector metric.AggregationSelector) Option {

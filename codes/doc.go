@@ -18,4 +18,4 @@ Package codes defines the canonical error codes used by OpenTelemetry.
 It conforms to [the OpenTelemetry
 specification](https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/trace/api.md#statuscanonicalcode).
 */
-package codes // import "go.opentelemetry.io/otel/codes"
+package codes // import "github.com/middleware-labs/otel/codes"

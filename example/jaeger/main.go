@@ -21,12 +21,12 @@ import (
 	"log"
 	"time"
 
-	"go.opentelemetry.io/otel"
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/exporters/jaeger"
-	"go.opentelemetry.io/otel/sdk/resource"
-	tracesdk "go.opentelemetry.io/otel/sdk/trace"
-	semconv "go.opentelemetry.io/otel/semconv/v1.17.0"
+	"github.com/middleware-labs/otel"
+	"github.com/middleware-labs/otel/attribute"
+	"github.com/middleware-labs/otel/exporters/jaeger"
+	"github.com/middleware-labs/otel/sdk/resource"
+	tracesdk "github.com/middleware-labs/otel/sdk/trace"
+	semconv "github.com/middleware-labs/otel/semconv/v1.17.0"
 )
 
 const (

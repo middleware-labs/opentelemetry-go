@@ -1,13 +1,13 @@
-module go.opentelemetry.io/otel/example/prometheus
+module github.com/middleware-labs/otel/example/prometheus
 
 go 1.19
 
 require (
 	github.com/prometheus/client_golang v1.14.0
-	go.opentelemetry.io/otel v1.15.0-rc.2
-	go.opentelemetry.io/otel/exporters/prometheus v0.38.0-rc.2
-	go.opentelemetry.io/otel/metric v1.15.0-rc.2
-	go.opentelemetry.io/otel/sdk/metric v0.38.0-rc.2
+	github.com/middleware-labs/otel v1.15.0-rc.2
+	github.com/middleware-labs/otel/exporters/prometheus v0.38.0-rc.2
+	github.com/middleware-labs/otel/metric v1.15.0-rc.2
+	github.com/middleware-labs/otel/sdk/metric v0.38.0-rc.2
 )
 
 require (
@@ -20,20 +20,20 @@ require (
 	github.com/prometheus/client_model v0.3.0 // indirect
 	github.com/prometheus/common v0.37.0 // indirect
 	github.com/prometheus/procfs v0.8.0 // indirect
-	go.opentelemetry.io/otel/sdk v1.15.0-rc.2 // indirect
-	go.opentelemetry.io/otel/trace v1.15.0-rc.2 // indirect
+	github.com/middleware-labs/otel/sdk v1.15.0-rc.2 // indirect
+	github.com/middleware-labs/otel/trace v1.15.0-rc.2 // indirect
 	golang.org/x/sys v0.7.0 // indirect
 	google.golang.org/protobuf v1.30.0 // indirect
 )
 
-replace go.opentelemetry.io/otel => ../..
+replace github.com/middleware-labs/otel => ../..
 
-replace go.opentelemetry.io/otel/exporters/prometheus => ../../exporters/prometheus
+replace github.com/middleware-labs/otel/exporters/prometheus => ../../exporters/prometheus
 
-replace go.opentelemetry.io/otel/sdk => ../../sdk
+replace github.com/middleware-labs/otel/sdk => ../../sdk
 
-replace go.opentelemetry.io/otel/sdk/metric => ../../sdk/metric
+replace github.com/middleware-labs/otel/sdk/metric => ../../sdk/metric
 
-replace go.opentelemetry.io/otel/metric => ../../metric
+replace github.com/middleware-labs/otel/metric => ../../metric
 
-replace go.opentelemetry.io/otel/trace => ../../trace
+replace github.com/middleware-labs/otel/trace => ../../trace

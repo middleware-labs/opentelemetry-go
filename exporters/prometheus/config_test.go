@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package prometheus // import "go.opentelemetry.io/otel/exporters/prometheus"
+package prometheus // import "github.com/middleware-labs/otel/exporters/prometheus"
 
 import (
 	"testing"
@@ -20,8 +20,8 @@ import (
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/stretchr/testify/assert"
 
-	"go.opentelemetry.io/otel/sdk/metric"
-	"go.opentelemetry.io/otel/sdk/metric/aggregation"
+	"github.com/middleware-labs/otel/sdk/metric"
+	"github.com/middleware-labs/otel/sdk/metric/aggregation"
 )
 
 func TestNewConfig(t *testing.T) {

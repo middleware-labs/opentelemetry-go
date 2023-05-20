@@ -12,9 +12,9 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package ast // import "go.opentelemetry.io/otel/schema/v1.0/ast"
+package ast // import "github.com/middleware-labs/otel/schema/v1.0/ast"
 
-import "go.opentelemetry.io/otel/schema/v1.0/types"
+import "github.com/middleware-labs/otel/schema/v1.0/types"
 
 // Schema represents a Schema file in FileFormat 1.0.0 as defined in
 // https://github.com/open-telemetry/oteps/blob/main/text/0152-telemetry-schemas.md

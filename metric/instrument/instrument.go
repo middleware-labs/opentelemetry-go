@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package instrument // import "go.opentelemetry.io/otel/metric/instrument"
+package instrument // import "github.com/middleware-labs/otel/metric/instrument"
 
 // Observable is used as a grouping mechanism for all instruments that are
 // updated within a Callback.

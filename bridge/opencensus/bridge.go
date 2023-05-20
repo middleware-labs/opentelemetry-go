@@ -12,15 +12,15 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package opencensus // import "go.opentelemetry.io/otel/bridge/opencensus"
+package opencensus // import "github.com/middleware-labs/otel/bridge/opencensus"
 
 import (
 	octrace "go.opencensus.io/trace"
 
-	"go.opentelemetry.io/otel/bridge/opencensus/internal"
-	"go.opentelemetry.io/otel/bridge/opencensus/internal/oc2otel"
-	"go.opentelemetry.io/otel/bridge/opencensus/internal/otel2oc"
-	"go.opentelemetry.io/otel/trace"
+	"github.com/middleware-labs/otel/bridge/opencensus/internal"
+	"github.com/middleware-labs/otel/bridge/opencensus/internal/oc2otel"
+	"github.com/middleware-labs/otel/bridge/opencensus/internal/otel2oc"
+	"github.com/middleware-labs/otel/trace"
 )
 
 // NewTracer returns an implementation of the OpenCensus Tracer interface which

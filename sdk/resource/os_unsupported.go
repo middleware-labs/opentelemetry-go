@@ -12,18 +12,10 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-// +build !aix
-// +build !darwin
-// +build !dragonfly
-// +build !freebsd
-// +build !linux
-// +build !netbsd
-// +build !openbsd
-// +build !solaris
-// +build !windows
-// +build !zos
+//go:build !aix && !darwin && !dragonfly && !freebsd && !linux && !netbsd && !openbsd && !solaris && !windows && !zos
+// +build !aix,!darwin,!dragonfly,!freebsd,!linux,!netbsd,!openbsd,!solaris,!windows,!zos
 
-package resource // import "go.opentelemetry.io/otel/sdk/resource"
+package resource // import "github.com/middleware-labs/otel/sdk/resource"
 
 // platformOSDescription is a placeholder implementation for OSes
 // for which this project currently doesn't support os.description

@@ -43,20 +43,20 @@ To create a new PR, fork the project in GitHub and clone the upstream
 repo:
 
 ```sh
-go get -d go.opentelemetry.io/otel
+go get -d github.com/middleware-labs/otel
 ```
 
 (This may print some warning about "build constraints exclude all Go
 files", just ignore it.)
 
-This will put the project in `${GOPATH}/src/go.opentelemetry.io/otel`. You
+This will put the project in `${GOPATH}/src/github.com/middleware-labs/otel`. You
 can alternatively use `git` directly with:
 
 ```sh
 git clone https://github.com/open-telemetry/opentelemetry-go
 ```
 
-(Note that `git clone` is *not* using the `go.opentelemetry.io/otel` name -
+(Note that `git clone` is *not* using the `github.com/middleware-labs/otel` name -
 that name is a kind of a redirector to GitHub that `go get` can
 understand, but `git` does not.)
 
@@ -242,8 +242,8 @@ how the user can extend the configuration.
 It is important that internal `config` are not shared across package boundaries.
 Meaning a `config` from one package should not be directly used by another. The
 one exception is the API packages.  The configs from the base API, eg.
-`go.opentelemetry.io/otel/trace.TracerConfig` and
-`go.opentelemetry.io/otel/metric.InstrumentConfig`, are intended to be consumed
+`github.com/middleware-labs/otel/trace.TracerConfig` and
+`github.com/middleware-labs/otel/metric.InstrumentConfig`, are intended to be consumed
 by the SDK therefor it is expected that these are exported.
 
 When a config is exported we want to maintain forward and backward

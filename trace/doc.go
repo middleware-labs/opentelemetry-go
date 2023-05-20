@@ -35,7 +35,7 @@ operation being performed as part of a traced workflow. In its simplest form:
 A Tracer is unique to the instrumentation and is used to create Spans.
 Instrumentation should be designed to accept a TracerProvider from which it
 can create its own unique Tracer. Alternatively, the registered global
-TracerProvider from the go.opentelemetry.io/otel package can be used as
+TracerProvider from the github.com/middleware-labs/otel package can be used as
 a default.
 
 	const (
@@ -63,4 +63,4 @@ a default.
 		// ...
 	}
 */
-package trace // import "go.opentelemetry.io/otel/trace"
+package trace // import "github.com/middleware-labs/otel/trace"

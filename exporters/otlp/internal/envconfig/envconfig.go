@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package envconfig // import "go.opentelemetry.io/otel/exporters/otlp/internal/envconfig"
+package envconfig // import "github.com/middleware-labs/otel/exporters/otlp/internal/envconfig"
 
 import (
 	"crypto/tls"
@@ -24,7 +24,7 @@ import (
 	"strings"
 	"time"
 
-	"go.opentelemetry.io/otel/internal/global"
+	"github.com/middleware-labs/otel/internal/global"
 )
 
 // ConfigFn is the generic function used to set a config.

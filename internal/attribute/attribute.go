@@ -16,7 +16,7 @@
 Package attribute provide several helper functions for some commonly used
 logic of processing attributes.
 */
-package attribute // import "go.opentelemetry.io/otel/internal/attribute"
+package attribute // import "github.com/middleware-labs/otel/internal/attribute"
 
 import (
 	"reflect"

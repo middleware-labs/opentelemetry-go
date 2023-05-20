@@ -1,4 +1,4 @@
-module go.opentelemetry.io/otel/exporters/otlp/internal/retry
+module github.com/middleware-labs/otel/exporters/otlp/internal/retry
 
 go 1.19
 

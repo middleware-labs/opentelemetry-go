@@ -18,9 +18,9 @@ import (
 	"context"
 	"testing"
 
-	"go.opentelemetry.io/otel/attribute"
-	sdktrace "go.opentelemetry.io/otel/sdk/trace"
-	"go.opentelemetry.io/otel/trace"
+	"github.com/middleware-labs/otel/attribute"
+	sdktrace "github.com/middleware-labs/otel/sdk/trace"
+	"github.com/middleware-labs/otel/trace"
 )
 
 type testSpanProcessor struct {

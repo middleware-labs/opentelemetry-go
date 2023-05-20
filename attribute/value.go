@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package attribute // import "go.opentelemetry.io/otel/attribute"
+package attribute // import "github.com/middleware-labs/otel/attribute"
 
 import (
 	"encoding/json"
@@ -20,8 +20,8 @@ import (
 	"reflect"
 	"strconv"
 
-	"go.opentelemetry.io/otel/internal"
-	"go.opentelemetry.io/otel/internal/attribute"
+	"github.com/middleware-labs/otel/internal"
+	"github.com/middleware-labs/otel/internal/attribute"
 )
 
 //go:generate stringer -type=Type

@@ -12,15 +12,15 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package internal // import "go.opentelemetry.io/otel/semconv/internal/v2"
+package internal // import "github.com/middleware-labs/otel/semconv/internal/v2"
 
 import (
 	"fmt"
 	"net/http"
 	"strings"
 
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/codes"
+	"github.com/middleware-labs/otel/attribute"
+	"github.com/middleware-labs/otel/codes"
 )
 
 // HTTPConv are the HTTP semantic convention attributes defined for a version

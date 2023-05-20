@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package schema // import "go.opentelemetry.io/otel/schema/v1.1"
+package schema // import "github.com/middleware-labs/otel/schema/v1.1"
 
 import (
 	"io"
@@ -20,8 +20,8 @@ import (
 
 	"gopkg.in/yaml.v2"
 
-	"go.opentelemetry.io/otel/schema/internal"
-	"go.opentelemetry.io/otel/schema/v1.1/ast"
+	"github.com/middleware-labs/otel/schema/internal"
+	"github.com/middleware-labs/otel/schema/v1.1/ast"
 )
 
 // Major file version number that this library supports.

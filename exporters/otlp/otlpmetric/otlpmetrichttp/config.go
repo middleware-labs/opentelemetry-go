@@ -12,15 +12,15 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package otlpmetrichttp // import "go.opentelemetry.io/otel/exporters/otlp/otlpmetric/otlpmetrichttp"
+package otlpmetrichttp // import "github.com/middleware-labs/otel/exporters/otlp/otlpmetric/otlpmetrichttp"
 
 import (
 	"crypto/tls"
 	"time"
 
-	"go.opentelemetry.io/otel/exporters/otlp/internal/retry"
-	"go.opentelemetry.io/otel/exporters/otlp/otlpmetric/internal/oconf"
-	"go.opentelemetry.io/otel/sdk/metric"
+	"github.com/middleware-labs/otel/exporters/otlp/internal/retry"
+	"github.com/middleware-labs/otel/exporters/otlp/otlpmetric/internal/oconf"
+	"github.com/middleware-labs/otel/sdk/metric"
 )
 
 // Compression describes the compression used for payloads sent to the
@@ -184,7 +184,7 @@ func WithRetry(rc RetryConfig) Option {
 // WithTemporalitySelector sets the TemporalitySelector the client will use to
 // determine the Temporality of an instrument based on its kind. If this option
 // is not used, the client will use the DefaultTemporalitySelector from the
-// go.opentelemetry.io/otel/sdk/metric package.
+// github.com/middleware-labs/otel/sdk/metric package.
 func WithTemporalitySelector(selector metric.TemporalitySelector) Option {
 	return wrappedOption{oconf.WithTemporalitySelector(selector)}
 }
@@ -192,7 +192,7 @@ func WithTemporalitySelector(selector metric.TemporalitySelector) Option {
 // WithAggregationSelector sets the AggregationSelector the client will use to
 // determine the aggregation to use for an instrument based on its kind. If
 // this option is not used, the reader will use the DefaultAggregationSelector
-// from the go.opentelemetry.io/otel/sdk/metric package, or the aggregation
+// from the github.com/middleware-labs/otel/sdk/metric package, or the aggregation
 // explicitly passed for a view matching an instrument.
 func WithAggregationSelector(selector metric.AggregationSelector) Option {
 	return wrappedOption{oconf.WithAggregationSelector(selector)}

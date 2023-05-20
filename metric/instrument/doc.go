@@ -56,4 +56,4 @@ and their intended use.
 
 [OpenTelemetry documentation]: https://opentelemetry.io/docs/concepts/signals/metrics/
 */
-package instrument // import "go.opentelemetry.io/otel/metric/instrument"
+package instrument // import "github.com/middleware-labs/otel/metric/instrument"

@@ -14,14 +14,14 @@
 
 // Package netconv provides OpenTelemetry network semantic conventions for
 // tracing telemetry.
-package netconv // import "go.opentelemetry.io/otel/semconv/v1.16.0/netconv"
+package netconv // import "github.com/middleware-labs/otel/semconv/v1.16.0/netconv"
 
 import (
 	"net"
 
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/semconv/internal/v2"
-	semconv "go.opentelemetry.io/otel/semconv/v1.16.0"
+	"github.com/middleware-labs/otel/attribute"
+	"github.com/middleware-labs/otel/semconv/internal/v2"
+	semconv "github.com/middleware-labs/otel/semconv/v1.16.0"
 )
 
 var nc = &internal.NetConv{

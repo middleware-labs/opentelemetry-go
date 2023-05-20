@@ -12,16 +12,16 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package global // import "go.opentelemetry.io/otel/internal/global"
+package global // import "github.com/middleware-labs/otel/internal/global"
 
 import (
 	"errors"
 	"sync"
 	"sync/atomic"
 
-	"go.opentelemetry.io/otel/metric"
-	"go.opentelemetry.io/otel/propagation"
-	"go.opentelemetry.io/otel/trace"
+	"github.com/middleware-labs/otel/metric"
+	"github.com/middleware-labs/otel/propagation"
+	"github.com/middleware-labs/otel/trace"
 )
 
 type (

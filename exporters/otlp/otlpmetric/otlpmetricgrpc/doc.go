@@ -14,4 +14,4 @@
 
 // Package otlpmetricgrpc provides an otlpmetric.Exporter that communicates
 // with an OTLP receiving endpoint using gRPC.
-package otlpmetricgrpc // import "go.opentelemetry.io/otel/exporters/otlp/otlpmetric/otlpmetricgrpc"
+package otlpmetricgrpc // import "github.com/middleware-labs/otel/exporters/otlp/otlpmetric/otlpmetricgrpc"

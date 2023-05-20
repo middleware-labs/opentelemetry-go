@@ -15,7 +15,7 @@
 //go:build dragonfly || freebsd || netbsd || openbsd || solaris
 // +build dragonfly freebsd netbsd openbsd solaris
 
-package resource // import "go.opentelemetry.io/otel/sdk/resource"
+package resource // import "github.com/middleware-labs/otel/sdk/resource"
 
 import (
 	"errors"

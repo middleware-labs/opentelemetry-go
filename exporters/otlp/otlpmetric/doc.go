@@ -17,4 +17,4 @@
 // the transformed data to OTLP receivers. The Exporter is configurable to use
 // different Clients, each using a distinct transport protocol to communicate
 // to an OTLP receiving endpoint.
-package otlpmetric // import "go.opentelemetry.io/otel/exporters/otlp/otlpmetric"
+package otlpmetric // import "github.com/middleware-labs/otel/exporters/otlp/otlpmetric"

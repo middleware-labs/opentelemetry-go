@@ -12,9 +12,9 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package metric // import "go.opentelemetry.io/otel/metric"
+package metric // import "github.com/middleware-labs/otel/metric"
 
-import "go.opentelemetry.io/otel/attribute"
+import "github.com/middleware-labs/otel/attribute"
 
 // MeterConfig contains options for Meters.
 type MeterConfig struct {

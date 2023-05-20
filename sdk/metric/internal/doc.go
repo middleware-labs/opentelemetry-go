@@ -15,4 +15,4 @@
 // Package internal provides types and functionality used to aggregate and
 // cycle the state of metric measurements made by the SDK. These types and
 // functionality are meant only for internal SDK use.
-package internal // import "go.opentelemetry.io/otel/sdk/metric/internal"
+package internal // import "github.com/middleware-labs/otel/sdk/metric/internal"

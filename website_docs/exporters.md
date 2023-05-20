@@ -16,8 +16,8 @@ Jaeger >= v1.35.0) you'll want to configure an OTLP exporter that sends to your 
 
 ```go
 import (
-  	"go.opentelemetry.io/otel/exporters/otlp/otlptrace"
-  	"go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracehttp"
+  	"github.com/middleware-labs/otel/exporters/otlp/otlptrace"
+  	"github.com/middleware-labs/otel/exporters/otlp/otlptrace/otlptracehttp"
 )
 
 func installExportPipeline(ctx context.Context) (func(context.Context) error, error) {
@@ -48,6 +48,6 @@ docker run -d --name jaeger \
 
 ## Prometheus
 
-Prometheus export is available in the `go.opentelemetry.io/otel/exporters/prometheus` package.
+Prometheus export is available in the `github.com/middleware-labs/otel/exporters/prometheus` package.
 
 Please find more documentation on [GitHub](https://github.com/open-telemetry/opentelemetry-go/tree/main/exporters/prometheus)

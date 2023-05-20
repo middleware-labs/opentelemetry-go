@@ -12,16 +12,16 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package tracetest // import "go.opentelemetry.io/otel/sdk/trace/tracetest"
+package tracetest // import "github.com/middleware-labs/otel/sdk/trace/tracetest"
 
 import (
 	"time"
 
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/sdk/instrumentation"
-	"go.opentelemetry.io/otel/sdk/resource"
-	tracesdk "go.opentelemetry.io/otel/sdk/trace"
-	"go.opentelemetry.io/otel/trace"
+	"github.com/middleware-labs/otel/attribute"
+	"github.com/middleware-labs/otel/sdk/instrumentation"
+	"github.com/middleware-labs/otel/sdk/resource"
+	tracesdk "github.com/middleware-labs/otel/sdk/trace"
+	"github.com/middleware-labs/otel/trace"
 )
 
 // SpanStubs is a slice of SpanStub use for testing an SDK.

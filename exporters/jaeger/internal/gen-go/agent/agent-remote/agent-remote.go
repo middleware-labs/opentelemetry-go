@@ -13,10 +13,10 @@ import (
 	"strconv"
 	"strings"
 
-	"go.opentelemetry.io/otel/exporters/jaeger/internal/gen-go/agent"
-	"go.opentelemetry.io/otel/exporters/jaeger/internal/gen-go/jaeger"
-	"go.opentelemetry.io/otel/exporters/jaeger/internal/gen-go/zipkincore"
-	"go.opentelemetry.io/otel/exporters/jaeger/internal/third_party/thrift/lib/go/thrift"
+	"github.com/middleware-labs/otel/exporters/jaeger/internal/gen-go/agent"
+	"github.com/middleware-labs/otel/exporters/jaeger/internal/gen-go/jaeger"
+	"github.com/middleware-labs/otel/exporters/jaeger/internal/gen-go/zipkincore"
+	"github.com/middleware-labs/otel/exporters/jaeger/internal/third_party/thrift/lib/go/thrift"
 )
 
 var _ = jaeger.GoUnusedProtection__

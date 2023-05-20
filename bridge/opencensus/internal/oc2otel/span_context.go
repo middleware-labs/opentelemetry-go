@@ -12,12 +12,12 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package oc2otel // import "go.opentelemetry.io/otel/bridge/opencensus/internal/oc2otel"
+package oc2otel // import "github.com/middleware-labs/otel/bridge/opencensus/internal/oc2otel"
 
 import (
 	octrace "go.opencensus.io/trace"
 
-	"go.opentelemetry.io/otel/trace"
+	"github.com/middleware-labs/otel/trace"
 )
 
 func SpanContext(sc octrace.SpanContext) trace.SpanContext {

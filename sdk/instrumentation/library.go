@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package instrumentation // import "go.opentelemetry.io/otel/sdk/instrumentation"
+package instrumentation // import "github.com/middleware-labs/otel/sdk/instrumentation"
 
 // Library represents the instrumentation library.
 // Deprecated: please use Scope instead.

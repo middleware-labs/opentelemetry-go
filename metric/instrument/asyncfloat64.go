@@ -12,13 +12,13 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package instrument // import "go.opentelemetry.io/otel/metric/instrument"
+package instrument // import "github.com/middleware-labs/otel/metric/instrument"
 
 import (
 	"context"
 
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/metric/embedded"
+	"github.com/middleware-labs/otel/attribute"
+	"github.com/middleware-labs/otel/metric/embedded"
 )
 
 // Float64Observable describes a set of instruments used asynchronously to
@@ -38,7 +38,7 @@ type Float64Observable interface {
 // assumed the to be the cumulative sum of the count.
 //
 // Warning: Methods may be added to this interface in minor releases. See
-// [go.opentelemetry.io/otel/metric] package documentation on API
+// [github.com/middleware-labs/otel/metric] package documentation on API
 // implementation for information on how to set default behavior for
 // unimplemented methods.
 type Float64ObservableCounter interface {
@@ -93,7 +93,7 @@ type Float64ObservableCounterOption interface {
 // the to be the cumulative sum of the count.
 //
 // Warning: Methods may be added to this interface in minor releases. See
-// [go.opentelemetry.io/otel/metric] package documentation on API
+// [github.com/middleware-labs/otel/metric] package documentation on API
 // implementation for information on how to set default behavior for
 // unimplemented methods.
 type Float64ObservableUpDownCounter interface {
@@ -148,7 +148,7 @@ type Float64ObservableUpDownCounterOption interface {
 // are only made within a callback for this instrument.
 //
 // Warning: Methods may be added to this interface in minor releases. See
-// [go.opentelemetry.io/otel/metric] package documentation on API
+// [github.com/middleware-labs/otel/metric] package documentation on API
 // implementation for information on how to set default behavior for
 // unimplemented methods.
 type Float64ObservableGauge interface {
@@ -201,7 +201,7 @@ type Float64ObservableGaugeOption interface {
 // Float64Observer is a recorder of float64 measurements.
 //
 // Warning: Methods may be added to this interface in minor releases. See
-// [go.opentelemetry.io/otel/metric] package documentation on API
+// [github.com/middleware-labs/otel/metric] package documentation on API
 // implementation for information on how to set default behavior for
 // unimplemented methods.
 type Float64Observer interface {

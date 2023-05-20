@@ -19,10 +19,10 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"go.opentelemetry.io/otel/metric"
-	"go.opentelemetry.io/otel/metric/noop"
-	"go.opentelemetry.io/otel/propagation"
-	"go.opentelemetry.io/otel/trace"
+	"github.com/middleware-labs/otel/metric"
+	"github.com/middleware-labs/otel/metric/noop"
+	"github.com/middleware-labs/otel/propagation"
+	"github.com/middleware-labs/otel/trace"
 )
 
 type nonComparableTracerProvider struct {

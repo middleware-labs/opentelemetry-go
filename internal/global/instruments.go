@@ -12,16 +12,16 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package global // import "go.opentelemetry.io/otel/internal/global"
+package global // import "github.com/middleware-labs/otel/internal/global"
 
 import (
 	"context"
 	"sync/atomic"
 
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/metric"
-	"go.opentelemetry.io/otel/metric/embedded"
-	"go.opentelemetry.io/otel/metric/instrument"
+	"github.com/middleware-labs/otel/attribute"
+	"github.com/middleware-labs/otel/metric"
+	"github.com/middleware-labs/otel/metric/embedded"
+	"github.com/middleware-labs/otel/metric/instrument"
 )
 
 // unwrapper unwraps to return the underlying instrument implementation.

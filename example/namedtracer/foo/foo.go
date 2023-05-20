@@ -12,14 +12,14 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package foo // import "go.opentelemetry.io/otel/example/namedtracer/foo"
+package foo // import "github.com/middleware-labs/otel/example/namedtracer/foo"
 
 import (
 	"context"
 
-	"go.opentelemetry.io/otel"
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/trace"
+	"github.com/middleware-labs/otel"
+	"github.com/middleware-labs/otel/attribute"
+	"github.com/middleware-labs/otel/trace"
 )
 
 var (

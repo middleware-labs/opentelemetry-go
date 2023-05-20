@@ -20,8 +20,8 @@ import (
 	"testing"
 	"time"
 
-	sdktrace "go.opentelemetry.io/otel/sdk/trace"
-	"go.opentelemetry.io/otel/trace"
+	sdktrace "github.com/middleware-labs/otel/sdk/trace"
+	"github.com/middleware-labs/otel/trace"
 )
 
 var (

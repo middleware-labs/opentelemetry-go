@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package types // import "go.opentelemetry.io/otel/schema/v1.0/types"
+package types // import "github.com/middleware-labs/otel/schema/v1.0/types"
 
 // TelemetryVersion is a version number key in the schema file (e.g. "1.7.0").
 type TelemetryVersion string

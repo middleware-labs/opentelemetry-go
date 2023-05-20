@@ -27,10 +27,10 @@ import (
 	"google.golang.org/grpc/status"
 	"google.golang.org/protobuf/types/known/durationpb"
 
-	ominternal "go.opentelemetry.io/otel/exporters/otlp/otlpmetric/internal"
-	"go.opentelemetry.io/otel/exporters/otlp/otlpmetric/internal/otest"
-	"go.opentelemetry.io/otel/sdk/metric"
-	"go.opentelemetry.io/otel/sdk/metric/metricdata"
+	ominternal "github.com/middleware-labs/otel/exporters/otlp/otlpmetric/internal"
+	"github.com/middleware-labs/otel/exporters/otlp/otlpmetric/internal/otest"
+	"github.com/middleware-labs/otel/sdk/metric"
+	"github.com/middleware-labs/otel/sdk/metric/metricdata"
 )
 
 func TestThrottleDuration(t *testing.T) {

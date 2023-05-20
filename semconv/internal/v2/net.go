@@ -12,14 +12,14 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package internal // import "go.opentelemetry.io/otel/semconv/internal/v2"
+package internal // import "github.com/middleware-labs/otel/semconv/internal/v2"
 
 import (
 	"net"
 	"strconv"
 	"strings"
 
-	"go.opentelemetry.io/otel/attribute"
+	"github.com/middleware-labs/otel/attribute"
 )
 
 // NetConv are the network semantic convention attributes defined for a version

@@ -21,7 +21,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	sdktrace "go.opentelemetry.io/otel/sdk/trace"
+	sdktrace "github.com/middleware-labs/otel/sdk/trace"
 )
 
 type rwSpan struct {

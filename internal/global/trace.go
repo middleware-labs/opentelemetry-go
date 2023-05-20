@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package global // import "go.opentelemetry.io/otel/internal/global"
+package global // import "github.com/middleware-labs/otel/internal/global"
 
 /*
 This file contains the forwarding implementation of the TracerProvider used as
@@ -36,9 +36,9 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/codes"
-	"go.opentelemetry.io/otel/trace"
+	"github.com/middleware-labs/otel/attribute"
+	"github.com/middleware-labs/otel/codes"
+	"github.com/middleware-labs/otel/trace"
 )
 
 // tracerProvider is a placeholder for a configured SDK TracerProvider.

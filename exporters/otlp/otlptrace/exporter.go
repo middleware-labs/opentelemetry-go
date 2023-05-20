@@ -12,16 +12,16 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package otlptrace // import "go.opentelemetry.io/otel/exporters/otlp/otlptrace"
+package otlptrace // import "github.com/middleware-labs/otel/exporters/otlp/otlptrace"
 
 import (
 	"context"
 	"errors"
 	"sync"
 
-	"go.opentelemetry.io/otel/exporters/otlp/internal"
-	"go.opentelemetry.io/otel/exporters/otlp/otlptrace/internal/tracetransform"
-	tracesdk "go.opentelemetry.io/otel/sdk/trace"
+	"github.com/middleware-labs/otel/exporters/otlp/internal"
+	"github.com/middleware-labs/otel/exporters/otlp/otlptrace/internal/tracetransform"
+	tracesdk "github.com/middleware-labs/otel/sdk/trace"
 )
 
 var (

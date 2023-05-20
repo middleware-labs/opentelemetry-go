@@ -28,9 +28,9 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 
-	ototel "go.opentelemetry.io/otel/bridge/opentracing"
-	"go.opentelemetry.io/otel/bridge/opentracing/internal"
-	"go.opentelemetry.io/otel/propagation"
+	ototel "github.com/middleware-labs/otel/bridge/opentracing"
+	"github.com/middleware-labs/otel/bridge/opentracing/internal"
+	"github.com/middleware-labs/otel/propagation"
 )
 
 type testGRPCServer struct{}
