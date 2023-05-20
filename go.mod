@@ -1,4 +1,4 @@
-module go.opentelemetry.io/otel
+module github.com/middleware-labs/otel
 
 go 1.19
 
@@ -17,6 +17,6 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-replace go.opentelemetry.io/otel/trace => ./trace
+replace github.com/middleware-labs/otel/trace => ./trace
 
-replace go.opentelemetry.io/otel/metric => ./metric
+replace github.com/middleware-labs/otel/metric => ./metric
